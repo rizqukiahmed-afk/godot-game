@@ -148,4 +148,8 @@ position = Vector2(631, 595)
 [node name="Collect10" parent="CGroup" instance=ExtResource("6_cj244")]
 position = Vector2(726, 555)
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+
 [connection signal="pressed" from="PopUp/Panel/Button" to="PopUp" method="_on_button_pressed"]
