@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://068skuf3fmei"]
+
+[ext_resource type="Texture2D" uid="uid://fgcob4geuk72" path="res://useless/Screenshot 2026-04-23 220503.png" id="1_7e0bv"]
+[ext_resource type="Script" uid="uid://ceakgfq4mnn3g" path="res://useless/pop_up_continuer.gd" id="1_dq7dt"]
+[ext_resource type="Script" uid="uid://cmubw74sx3hy2" path="res://useful/scripts/game_manager.gd" id="3_wc1p6"]
+
+[node name="PopUpContinuer" type="Node2D"]
+script = ExtResource("1_dq7dt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -116.0
+offset_right = 1156.0
+offset_bottom = 647.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7e0bv")
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("3_wc1p6")
